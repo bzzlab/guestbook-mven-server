@@ -1,7 +1,3 @@
-//Task-3a
-import { Blog } from './blog.js';
-//End Task
-
 //Task-2a
 import dbConnection from "../../database-connection";
 //End Task
@@ -19,7 +15,7 @@ export function holeGuestbookEintraege(req, res, next) {
     //initialize an array called liste
     let liste = [];
 
-    //define an sql-query
+    //define sql-query
     const abfrage = "select * from eintrag;";
     try {
         //submit sql query stored in the string abfrage.
@@ -53,30 +49,38 @@ export function holeGuestbookEintraege(req, res, next) {
 
 //End Task
 
-//Task-3b
+//Task-3a
 /**
  * Main function for getting/processing post data
  * @param req
  * @param res
  * @returns {*}
  */
-export async function erzeugeGuestbookEintrag(req, res, next) {
+export function erzeugeGuestbookEintrag(req, res, next) {
+    //define sql-query
+    const abfrage = "insert into eintrag set ?";
     try {
-        let new_blogEntry = new Blog(
-            req.body.nickname.toLowerCase(),
-            req.body.title.toLowerCase(),
-            req.body.content.toLowerCase()
-        );
 
-        if (new_blogEntry.nickname) {
-            await database.blogentries.create(
-                new_blogEntry.nickname,
-                new_blogEntry.title,
-                new_blogEntry.content
-            );
-        }
+        let today = new Date();
+        let heutigesDatum = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+
+        //submit sql query stored in the string abfrage.
+        let neuerEintrag = {
+            titel: req.body.titel.toLowerCase(),
+            text: req.body.text.toLowerCase(),
+            autor: req.body.autor.toLowerCase(),
+            email: req.body.email.toLowerCase(),
+            datum: heutigesDatum
+        };
+
+        dbConnection.query(abfrage, neuerEintrag, (fehler, resultat) => {
+            if (fehler) {
+                console.error(fehler);
+            }
+        });
         return res.status(201).json({
-            message: `blog inserted with ${new_blogEntry.title}!`
+            message: `blog inserted with ${neuerEintrag.titel}!`
         });
     } catch (ex) {
         next(ex);

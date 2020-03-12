@@ -2,7 +2,7 @@ import express from 'express';
 const router  = express.Router();
 import * as controller from './blog-controller';
 
-//Task-3c
+//Task-3b
 /**
  * create a guestbook entry
  */

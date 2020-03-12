@@ -11,6 +11,9 @@ class Blog {
     get titel() {
         return this._titel;
     }
+    get datum() {
+        return this._datum;
+    }
 
 
     /**
@@ -26,6 +29,7 @@ class Blog {
         this._text = text;
         this._autor = autor;
         this._email = email;
+        this._datum = datum;
     }
 };
 

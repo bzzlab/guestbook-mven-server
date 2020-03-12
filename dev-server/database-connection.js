@@ -1,4 +1,4 @@
-//Task 1
+//Task-1
 import mysql from 'mysql';
 const dbConnection = mysql.createConnection(
     {host: 'localhost', user: 'root',
