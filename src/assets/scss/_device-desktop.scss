@@ -1,0 +1,15 @@
+@import "mixins/content";
+/* Large/desktop devices */
+@media screen and (min-width: 992px){
+    h1 {
+      margin-top: 3.5rem;
+    }
+
+   /* mixin jumbotron and container */
+   @include content(4rem,2rem,4rem,2rem);
+
+    /* or div#navbarSupportedContent */
+    div.navbar-collapse {
+      top: 10px;
+    }
+}

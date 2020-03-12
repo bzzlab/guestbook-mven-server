@@ -1,0 +1,91 @@
+/* Assembly all parts */
+/* General */
+/* Navigation variables */
+/* Logo */
+/* Forms */
+.custom-bg-dark {
+  /* add !important; in post to over right bootstrap */
+  background-color: #373f46 !important; }
+
+/* https://www.w3schools.com/colors/colors_picker.asp */
+.navbar-brand, .nav-link {
+  color: #00ccff !important; }
+
+.logo {
+  height: 25px;
+  padding-right: 10px; }
+
+nav.navbar {
+  height: 4rem; }
+
+a.navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+li.nav-item a {
+  text-transform: uppercase; }
+
+/* General */
+/* Navigation variables */
+/* Logo */
+/* Forms */
+.footer-primary {
+  height: 4rem;
+  font-size: 1rem;
+  background-color: #373f46;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* smartphone devices */
+@media screen and (min-width: 360px) {
+  h1 {
+    margin-top: 3.5rem; }
+  .footer-primary {
+    height: 2rem;
+    font-size: .7rem; }
+  /* mixin jumbotron and container */
+  .jumbotron {
+    padding: 2rem 1.5rem 2rem 1.5rem; }
+  .container {
+    padding: 1rem 0.75rem 1rem 0.75rem; }
+  /* or div#navbarSupportedContent */
+  div.navbar-collapse {
+    top: 10px; } }
+
+/* tablet devices */
+@media screen and (min-width: 772px) {
+  h1 {
+    margin-top: 3.5rem; }
+  .footer-primary {
+    height: 4rem;
+    font-size: 1rem; }
+  /* mixin jumbotron and container */
+  .jumbotron {
+    padding: 2rem 1.5rem 2rem 1.5rem; }
+  .container {
+    padding: 1rem 0.75rem 1rem 0.75rem; }
+  /* or div#navbarSupportedContent */
+  div.navbar-collapse {
+    top: 10px; }
+  .dropdown-menu {
+    float: right !important;
+    left: inherit !important; } }
+
+/* Large/desktop devices */
+@media screen and (min-width: 992px) {
+  h1 {
+    margin-top: 3.5rem; }
+  /* mixin jumbotron and container */
+  .jumbotron {
+    padding: 4rem 2rem 4rem 2rem; }
+  .container {
+    padding: 2rem 1rem 2rem 1rem; }
+  /* or div#navbarSupportedContent */
+  div.navbar-collapse {
+    top: 10px; } }

@@ -1,0 +1,9 @@
+@import "variables";
+
+form.custom-form{
+  max-width: $with;
+  display: $display;
+  flex-direction: $direction;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,11 @@
+@mixin content($p_t,$p_r,$p_b,$p_l){
+  .jumbotron {
+    //padding: 4rem 2rem;
+    //padding: 2rem 1.5rem;
+    padding: $p_t $p_r $p_b $p_l;
+  }
+  .container {
+    padding: $p_t/2 $p_r/2 $p_b/2 $p_l/2;
+  }
+}
+

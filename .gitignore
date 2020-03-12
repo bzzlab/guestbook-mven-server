@@ -1,0 +1,9 @@
+sftp-config.json
+archiv/
+dist/
+prod-server/
+node_modules/
+logs/
+.idea/
+package-lock.json
+/dev-server/archive/

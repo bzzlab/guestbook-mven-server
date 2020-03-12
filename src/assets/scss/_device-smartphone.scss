@@ -1,0 +1,19 @@
+/* smartphone devices */
+@import "mixins/content";
+
+@media screen and (min-width: 360px){
+    h1 {
+      margin-top: 3.5rem;
+    }
+    .footer-primary {
+      height: 2rem;
+      font-size: .7rem;
+    }
+    /* mixin jumbotron and container */
+    @include content(2rem,1.5rem,2rem,1.5rem);
+
+    /* or div#navbarSupportedContent */
+    div.navbar-collapse {
+      top: 10px;
+    }
+  }

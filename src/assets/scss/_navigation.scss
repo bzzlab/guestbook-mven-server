@@ -1,0 +1,29 @@
+@import "variables";
+
+.custom-bg-dark {
+  /* add !important; in post to over right bootstrap */
+  background-color: $color-bg !important;
+}
+
+/* https://www.w3schools.com/colors/colors_picker.asp */
+.navbar-brand, .nav-link {
+  color: $color-nav !important;
+}
+
+.logo {
+  height: $logo-height;
+  padding-right: $logo-pad-ri;
+}
+
+nav.navbar {
+  height: 4rem;
+}
+
+a.navbar-brand {
+  text-transform: $transform-text;
+  letter-spacing: 3px;
+}
+
+li.nav-item a {
+  text-transform: $transform-text;
+}
