@@ -36,7 +36,6 @@ Step 1: Clone the code from this repo from the command-line
 ```
 git clone https://github.com/bzzlab/guestbook-mven-server.git
 cd guestbook-mven-server
-git checkout ict06-1-exe
 ```
 Step 2: Install app dependencies
 ```
