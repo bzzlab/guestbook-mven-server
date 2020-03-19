@@ -276,7 +276,6 @@ mkdir solution
 cd solution
 git clone https://github.com/bzzlab/guestbook-mven-server.git
 cd guestbook-mven-server
-git checkout ict06-1-sol
 ```
 
 
