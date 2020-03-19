@@ -131,7 +131,7 @@ export function holeGuestbookEintraege(req, res, next) {
                 }
                 let eintrag = reihen[index];
                 liste.push({
-                    "titel": "Test", //blog.titel,
+                    "titel": eintrag.titel,
                     "text": eintrag.text,
                     "autor": eintrag.autor,
                     "email": eintrag.email,
