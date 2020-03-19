@@ -252,7 +252,7 @@ Step 2: Run application from Webstorm or from the console
 npm run run-server
 ```
 
-## Part 7: Test
+### Part 7: Test
 #### With curl
 curl is command-line based tool which is to used to submit HTTP-requests and sending data to the backend 
 (usually done via webform). See also in the directory test!
@@ -267,7 +267,17 @@ POST-Request for Mac-user
 post-1.sh
 ```
 
+### Part 8: Check your results with the solution
+#### For Windows and MacOS
+Type these commands in your terminal or Windows-CMD
 
+```
+mkdir solution
+cd solution
+git clone https://github.com/bzzlab/guestbook-mven-server.git
+cd guestbook-mven-server
+git checkout ict06-1-sol
+```
 
 
 ### Tools, helpers and quirks
