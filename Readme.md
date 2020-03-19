@@ -6,7 +6,7 @@ This guestbook application has been developed with the following technology-stac
 * Alasql.js (simple file-based database)
 * Node.js (webbased backend infrastructure)
 
-#### Frontend (guestbook-mven-server)
+#### Frontend (guestbook-mven-client)
 * Vue.js (component-based user-interfaces)
 * babel (transpiler, compatibility of new ECMAScript 6 and higher to ECMAScript 5)
 
