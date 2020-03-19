@@ -1,4 +1,4 @@
-# Get started with the guestbook application
+# Get started with the guestbook server
 ### Introduction
 This guestbook application has been developed with the following technology-stack:
 #### Backend (guestbook-mven-server)
