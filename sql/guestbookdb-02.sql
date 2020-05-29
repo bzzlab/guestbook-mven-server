@@ -1,6 +1,0 @@
-INSERT INTO guestbookdb.eintrag (id, titel, text, autor, email, datum) VALUES (1, 'Coole Website', 'Super webseite ... wir kommen wieder.', 'Hans Muster', 'hans.muster@beispiel.ch', '2020-03-05');
-INSERT INTO guestbookdb.eintrag (id, titel, text, autor, email, datum) VALUES (2, 'Naja Website', 'Tolle webseite!', 'Hans Muster', 'hans.muster@beispiel.ch', '2020-03-05');
-INSERT INTO guestbookdb.eintrag (id, titel, text, autor, email, datum) VALUES (3, 'Hallo Leute', 'Tolle webseite!', 'Anna Meier', 'anna.meier@beispiel.ch', '2020-03-05');
-INSERT INTO guestbookdb.eintrag (id, titel, text, autor, email, datum) VALUES (4, 'Cheers', 'Super webseite ... wir kommen wieder.', 'Hans Muster', 'hans.muster@beispiel.ch', '2020-03-05');
-INSERT INTO guestbookdb.eintrag (id, titel, text, autor, email, datum) VALUES (5, 'Hallo Kollegen', 'Tolle webseite!', 'Hans Muster', 'hans.muster@beispiel.ch', '2020-03-05');
-INSERT INTO guestbookdb.eintrag (id, titel, text, autor, email, datum) VALUES (6, 'Hallo Kollegen', 'Tolle webseite!', 'Anna Meier', 'anna.meier@beispiel.ch', '2020-03-05');
